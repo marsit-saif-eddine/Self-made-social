@@ -1,0 +1,49 @@
+/* Embed.css */
+
+/* General styles for the embed section */
+.embed-section {
+    position: relative;
+    width: 100%;
+    height: -webkit-fill-available; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Black background color */
+    padding: 0; /* Remove padding */
+    box-sizing: border-box;
+  }
+  
+  /* Styling for embedded content */
+  .embed-content {
+    width: 100%;
+    max-width: 400px; /* Reduced maximum width for better centering */
+    text-align: center; /* Center the text */
+    color: #fff; /* Text color */
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    padding: 0.4rem; /* Increased padding */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    margin:40px;
+
+  }
+  
+  /* Styling for achievements */
+  .achievement {
+    margin-bottom: 20px; /* More space between achievements */
+  }
+  
+  /* Logo styles */
+  .logoEmbed {
+    display: block;
+    max-width: 140px; /* Reduced logo size */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px; /* Space below the logo */
+  }
+  
+  /* Header styles */
+  .embed-header {
+    font-size: 24px; /* Larger font size */
+    margin-bottom: 20px; /* Space below the header */
+  }
+  

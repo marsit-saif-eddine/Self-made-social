@@ -1,0 +1,119 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Works section styles */
+.works {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    color: #000000;
+
+}
+
+.works .container-works {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.works h2 {
+    font-weight: 550;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #000000;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #333;
+}
+
+/* Work card styles */
+.work-card {
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.4px solid #f7f7f7;
+    /* Add a subtle border */
+
+    margin: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.work-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.work-card-content {
+    position: relative;
+    color: #333;
+    text-align: center;
+}
+
+.work-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.work-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+}
+
+.work-card a {
+    color: #589fc5;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.work-card a:hover {
+    color: #376e8c;
+}
+
+.work-card a .fa-tiktok,
+.work-card a .fa-instagram {
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+
+
+    .works h2 {
+        font-size: 2rem;
+    }
+
+    .work-card-content {
+        padding: 1rem;
+    }
+}
+
+.slick-track {
+    display: flex;
+    gap: 1rem;
+}

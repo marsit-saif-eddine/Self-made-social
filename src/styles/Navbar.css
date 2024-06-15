@@ -1,0 +1,120 @@
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css');
+
+* {
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  transition: top 0.3s, background 0.3s;
+  z-index: 1000;
+}
+
+.navbar.active {
+  top: 0;
+}
+
+.navbar.hidden {
+  top: -100px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 0.5rem;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3)); /* Enhanced drop shadow */
+}
+
+.logo-text {
+  font-weight: 900;
+  font-size: 0.8rem; /* Slightly larger font size for better readability */
+  color: #fff;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  gap: 1rem; /* Reduce gap for better spacing */
+  padding: 0.5rem 1rem;
+  background: rgba(88, 159, 197, 0.9); /* Semi-transparent matching background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  border-radius: 20px; /* Match the button border radius */
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.nav-items:hover {
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.nav-items li {
+  cursor: pointer;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #fff; /* White for better contrast */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  transition: color 0.3s background-color 0.3s;
+}
+
+.nav-items a:hover {
+  color: #000; /* Change text color to black on hover */
+  background: rgba(255, 255, 255, 0.9); /* Background color change on hover */
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+}
+
+.get-started {
+  background-color: #589fc5; /* Button background color */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.get-started:hover {
+  background-color: #40799e; /* Slightly darker on hover */
+  transform: scale(1.1); /* Slightly larger on hover */
+}
+
+@media (max-width: 768px) {
+  .nav-items {
+    display: none;
+  }
+
+  .navbar-container {
+    justify-content: space-between;
+  }
+}

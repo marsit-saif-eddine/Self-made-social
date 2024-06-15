@@ -1,0 +1,107 @@
+/* Services section styles */
+.services {
+  position: relative;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  color: #000;
+  text-align: center;
+  overflow: hidden;
+  /* Ensure floating circle does not overflow */
+}
+
+.services .container-services {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services h2 {
+  font-weight: 550;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+  /* Ensure it is above the floating circle */
+}
+@media (max-width: 768px) {
+  .services h2 {
+    font-size: 2rem;
+    
+  }
+}
+
+.services .services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
+  /* Ensure it is above the floating circle */
+}
+
+.services .service-item {
+  flex: 0 1 calc(45% - 2rem);
+  background: #ffffff;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 2;
+  /* Ensure it is above the floating circle */
+}
+
+.services .service-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.services .service-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.services .service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Floating Circle */
+.services .floating-circle {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  background-color: #589fc5;
+  border-radius: 50%;
+  z-index: 1;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+@media (max-width: 768px) {
+  .services .service-item {
+    flex: 0 1 calc(100% - 2rem);
+  }
+
+  .services .floating-circle {
+    top: -100px;
+    right: 0;
+    width: 200px;
+    height: 200px;
+  }
+}

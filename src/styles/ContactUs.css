@@ -1,0 +1,83 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Contact Us Section */
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  background: #ffffff; /* Light background color */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 3rem auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #e0e0e0; /* Add a subtle border */
+}
+
+.contact-us:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-us h2 {
+  font-weight: 550;
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.contact-us p {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 1.2rem;
+}
+
+.whatsapp-button i {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebd55;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .contact-us {
+    padding: 1.5rem;
+  }
+
+  .contact-us h2 {
+    font-size: 2rem;
+  }
+
+  .contact-us p {
+    font-size: 1rem;
+  }
+
+  .whatsapp-button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .whatsapp-button i {
+    font-size: 1.2rem;
+  }
+}
